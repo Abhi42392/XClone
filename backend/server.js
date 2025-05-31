@@ -26,7 +26,7 @@ connectCloudinary()
 
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+ origin: ['http://localhost:5173', 'https://xclone-1-hq2c.onrender.com'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));
