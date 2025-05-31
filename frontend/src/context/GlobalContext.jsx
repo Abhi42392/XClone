@@ -4,7 +4,7 @@ import React, { createContext, useEffect, useState } from 'react'
 export const GlobalContextProvider=createContext(null)
 const GlobalContext = ({children}) => {
      const backendUrl="http://localhost:4000"
-     const redisUrl="redis://localhost:6379"
+     const redisUrl=import.meta.env.REDIS_URL;
 
     const[currentPlaying,setCurrentPlaying]=useState('');
     const[token,setToken]=useState(localStorage.getItem("token")?localStorage.getItem("token"):"");
