@@ -3,7 +3,7 @@ import {toast} from 'react-toastify'
 import React, { createContext, useEffect, useState } from 'react'
 export const GlobalContextProvider=createContext(null)
 const GlobalContext = ({children}) => {
-     const backendUrl="http://localhost:4000"
+     const backendUrl="https://xclone-r93j.onrender.com"
      const redisUrl=import.meta.env.REDIS_URL;
 
     const[currentPlaying,setCurrentPlaying]=useState('');
