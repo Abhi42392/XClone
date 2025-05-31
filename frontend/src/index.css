@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@theme{
+    --color-primary: #1D9BF0;
+    --color-secondary:#D3D3D3;
+    --breakpoint-xs:30rem;
+}
+.active{
+    font-weight: 700;
+}
+.scroll::-webkit-scrollbar{
+    display: none;
+}
